@@ -3,22 +3,22 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Categories | Arnav Gupta</title>
-<meta property="og:title" content="Categories | Arnav Gupta" />
-<meta name="twitter:title" content="Categories | Arnav Gupta" />
-<meta itemprop="name" content="Categories | Arnav Gupta" />
-<meta name="application-name" content="Categories | Arnav Gupta" />
+<title itemprop="name">Emoji Support | Arnav Gupta</title>
+<meta property="og:title" content="Emoji Support | Arnav Gupta" />
+<meta name="twitter:title" content="Emoji Support | Arnav Gupta" />
+<meta itemprop="name" content="Emoji Support | Arnav Gupta" />
+<meta name="application-name" content="Emoji Support | Arnav Gupta" />
 <meta property="og:site_name" content="Arnav Gupta" />
 
-<meta name="description" content="Hi, My name is Arnav, a Computer Science Student">
-<meta itemprop="description" content="Hi, My name is Arnav, a Computer Science Student" />
-<meta property="og:description" content="Hi, My name is Arnav, a Computer Science Student" />
-<meta name="twitter:description" content="Hi, My name is Arnav, a Computer Science Student" />
+<meta name="description" content="Guide to emoji usage in Hugo">
+<meta itemprop="description" content="Guide to emoji usage in Hugo" />
+<meta property="og:description" content="Guide to emoji usage in Hugo" />
+<meta name="twitter:description" content="Guide to emoji usage in Hugo" />
 
 <meta property="og:locale" content="en-gb" />
 <meta name="language" content="en-gb" />
 
-  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/categories/" title="English" />
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/en/posts/emoji-support/" title="English" />
 
 
 
@@ -28,26 +28,28 @@
 <meta name="generator" content="Hugo 0.133.1">
 
     
-    <meta property="og:url" content="http://localhost:1313/categories/">
+    <meta property="og:url" content="http://localhost:1313/en/posts/emoji-support/">
   <meta property="og:site_name" content="Arnav Gupta">
-  <meta property="og:title" content="Categories">
-  <meta property="og:description" content="Hi, My name is Arnav, a Computer Science Student">
+  <meta property="og:title" content="Emoji Support">
+  <meta property="og:description" content="Guide to emoji usage in Hugo">
   <meta property="og:locale" content="en_gb">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="en">
+    <meta property="article:published_time" content="2023-02-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-02-01T00:00:00+00:00">
+    <meta property="article:tag" content="Emoji">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Categories">
-  <meta name="twitter:description" content="Hi, My name is Arnav, a Computer Science Student">
+  <meta name="twitter:title" content="Emoji Support">
+  <meta name="twitter:description" content="Guide to emoji usage in Hugo">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/categories/">
-    <link href="/categories/index.xml" rel="alternate" type="application/rss+xml" title="Arnav Gupta">
-    <link href="/categories/index.xml" rel="feed" type="application/rss+xml" title="Arnav Gupta">
+    <link rel="canonical" href="http://localhost:1313/en/posts/emoji-support/">
     <link href="/style.min.d43bc6c79baa87f006efb2b92be952faeedeb1a3ab626c1d6abda52eae049355.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -112,7 +114,7 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/pages/about/">
+                    <a class="menu-link " href="/about/">
                         About
                     </a>
                     
@@ -133,15 +135,41 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Categories</h1>
-    </header>
-    <main class="page-content" aria-label="Content">
-         
 
-    </main>
-</div><footer class="footer">
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Emoji Support</h1>
+                
+                
+                <div class="post-meta">
+                    <time datetime="2023-02-01T00:00:00&#43;00:00" itemprop="datePublished"> 1 Feb 2023 </time>
+                </div>
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Table of Contents</b></summary>
+        <nav id="TableOfContents"></nav>
+    </details>
+            <div class="page-content">
+                <p>Emoji can be enabled in a Hugo project in a number of ways.</p>
+<p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
+<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site&rsquo;s <code>hugo.toml</code>. You can type emoji shorthand codes directly in content files; e.g.</p>
+<p><code>:see_no_evil:</code> &#x1f648; <code>:hear_no_evil:</code> &#x1f649; <code>:speak_no_evil:</code> &#x1f64a;</p>
+<p>I &#x2764;&#xfe0f; Hugo! 😁</p>
+<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
+<hr>
+<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">emoji</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font-family</span><span class="p">:</span> <span class="n">Apple</span> <span class="n">Color</span> <span class="n">Emoji</span><span class="p">,</span> <span class="n">Segoe</span> <span class="n">UI</span> <span class="n">Emoji</span><span class="p">,</span> <span class="n">NotoColorEmoji</span><span class="p">,</span> <span class="n">Segoe</span> <span class="n">UI</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">Android</span> <span class="n">Emoji</span><span class="p">,</span> <span class="n">EmojiSymbols</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

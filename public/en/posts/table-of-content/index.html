@@ -3,22 +3,22 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Categories | Arnav Gupta</title>
-<meta property="og:title" content="Categories | Arnav Gupta" />
-<meta name="twitter:title" content="Categories | Arnav Gupta" />
-<meta itemprop="name" content="Categories | Arnav Gupta" />
-<meta name="application-name" content="Categories | Arnav Gupta" />
+<title itemprop="name">Table of content | Arnav Gupta</title>
+<meta property="og:title" content="Table of content | Arnav Gupta" />
+<meta name="twitter:title" content="Table of content | Arnav Gupta" />
+<meta itemprop="name" content="Table of content | Arnav Gupta" />
+<meta name="application-name" content="Table of content | Arnav Gupta" />
 <meta property="og:site_name" content="Arnav Gupta" />
 
-<meta name="description" content="Hi, My name is Arnav, a Computer Science Student">
-<meta itemprop="description" content="Hi, My name is Arnav, a Computer Science Student" />
-<meta property="og:description" content="Hi, My name is Arnav, a Computer Science Student" />
-<meta name="twitter:description" content="Hi, My name is Arnav, a Computer Science Student" />
+<meta name="description" content="Setup table of content in Hugo blog awesome theme">
+<meta itemprop="description" content="Setup table of content in Hugo blog awesome theme" />
+<meta property="og:description" content="Setup table of content in Hugo blog awesome theme" />
+<meta name="twitter:description" content="Setup table of content in Hugo blog awesome theme" />
 
 <meta property="og:locale" content="en-gb" />
 <meta name="language" content="en-gb" />
 
-  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/categories/" title="English" />
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/en/posts/table-of-content/" title="English" />
 
 
 
@@ -28,26 +28,27 @@
 <meta name="generator" content="Hugo 0.133.1">
 
     
-    <meta property="og:url" content="http://localhost:1313/categories/">
+    <meta property="og:url" content="http://localhost:1313/en/posts/table-of-content/">
   <meta property="og:site_name" content="Arnav Gupta">
-  <meta property="og:title" content="Categories">
-  <meta property="og:description" content="Hi, My name is Arnav, a Computer Science Student">
+  <meta property="og:title" content="Table of content">
+  <meta property="og:description" content="Setup table of content in Hugo blog awesome theme">
   <meta property="og:locale" content="en_gb">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="en">
+    <meta property="article:published_time" content="2023-05-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-05-02T00:00:00+00:00">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Categories">
-  <meta name="twitter:description" content="Hi, My name is Arnav, a Computer Science Student">
+  <meta name="twitter:title" content="Table of content">
+  <meta name="twitter:description" content="Setup table of content in Hugo blog awesome theme">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/categories/">
-    <link href="/categories/index.xml" rel="alternate" type="application/rss+xml" title="Arnav Gupta">
-    <link href="/categories/index.xml" rel="feed" type="application/rss+xml" title="Arnav Gupta">
+    <link rel="canonical" href="http://localhost:1313/en/posts/table-of-content/">
     <link href="/style.min.d43bc6c79baa87f006efb2b92be952faeedeb1a3ab626c1d6abda52eae049355.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -112,7 +113,7 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/pages/about/">
+                    <a class="menu-link " href="/about/">
                         About
                     </a>
                     
@@ -133,15 +134,92 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Categories</h1>
-    </header>
-    <main class="page-content" aria-label="Content">
-         
 
-    </main>
-</div><footer class="footer">
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Table of content</h1>
+                
+                
+                <div class="post-meta">
+                    <time datetime="2023-05-02T00:00:00&#43;00:00" itemprop="datePublished"> 2 May 2023 </time>
+                </div>
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Table of Contents</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-content">Table of content</a></li>
+    <li><a href="#parameters">Parameters</a></li>
+    <li><a href="#enable-table-of-content-on-all-posts">Enable table of content on all posts</a></li>
+    <li><a href="#enable-table-of-content-on-certain-posts">Enable table of content on certain posts</a></li>
+    <li><a href="#disable-table-of-content-on-certain-posts">Disable table of content on certain posts</a></li>
+    <li><a href="#open-table-of-content">Open table of content</a></li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <h2 id="table-of-content">Table of content</h2>
+<p>This theme supports displaying table of content (ToC) in blog posts.</p>
+<h2 id="parameters">Parameters</h2>
+<p>You can manage a ToC with two parameters:</p>
+<ul>
+<li>global <code>toc</code> parameter;</li>
+<li>post <code>toc</code> parameter.</li>
+</ul>
+<p>The post <code>toc</code> parameter has higher priority than the global <code>toc</code> parameter.</p>
+<h2 id="enable-table-of-content-on-all-posts">Enable table of content on all posts</h2>
+<p>To enable ToC on all posts (globally) set parameter <code>toc</code> to <code>true</code> in <code>hugo.toml</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">toc</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><p>To disable ToC globally, simply ignore the <code>toc</code> parameter or set it to <code>false</code>.</p>
+<h2 id="enable-table-of-content-on-certain-posts">Enable table of content on certain posts</h2>
+<p>To enable ToC on certain posts set parameter <code>toc</code> to <code>true</code> in post settings.</p>
+<pre><code>```yaml
+---
+title: How to enable table of content
+date: 2023-05-02
+toc: true
+---
+```
+</code></pre>
+<h2 id="disable-table-of-content-on-certain-posts">Disable table of content on certain posts</h2>
+<p>To disable ToC on certain posts, you have to follow two steps.</p>
+<p>Notice: <code>.Params.toc</code> in the post will override <code>.Site.Params.toc</code>. After these steps, parameter <code>toc</code>  in the post will be <code>false</code>.</p>
+<ol>
+<li>
+<p>Set parameter <code>toc</code> to <code>true</code> in <code>hugo.toml</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">toc</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Add <code>toc = false</code> to the front matter of the post for which you wish to disable ToC.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">How to enable table of content</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2023-05-02</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">toc</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
+<h2 id="open-table-of-content">Open table of content</h2>
+<p>By default, ToC is closed. To open it by default, set parameter <code>tocOpen</code> to <code>true</code> in <code>hugo.toml</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">tocOpen</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><p>Or simply add the <code>tocOpen</code> parameter to the front matter of the post.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">How to enable table of content</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2023-05-02</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">tocOpen</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div>
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 
