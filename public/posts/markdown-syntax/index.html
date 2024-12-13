@@ -68,7 +68,7 @@
     </script>
 
 
-<meta name="generator" content="Hugo 0.133.1">
+<meta name="generator" content="Hugo 0.139.4">
 
     
     <meta property="og:url" content="http://localhost:1313/posts/markdown-syntax/">
@@ -257,10 +257,10 @@ stroke-linejoin="round" class="feather feather-home">
 <h2 id="image">Image</h2>
 <p>You can use the following syntax to include an image. Path of the image should be relative to the <code>index.md</code> file.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">Landscape</span>](<span class="na">1.jpg</span>)
-</span></span></code></pre></div><p><img alt="Landscape" src="/posts/markdown-syntax/1.jpg"></p>
+</span></span></code></pre></div><p><img src="/posts/markdown-syntax/1.jpg" alt="Landscape"></p>
 <p>You can also include image from external sources.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">Image</span>](<span class="na">https://source.unsplash.com/random/600x400/?tech</span>)
-</span></span></code></pre></div><p><img alt="Image" src="https://source.unsplash.com/random/600x400/?tech"></p>
+</span></span></code></pre></div><p><img src="https://source.unsplash.com/random/600x400/?tech" alt="Image"></p>
 <h2 id="blockquotes">Blockquotes</h2>
 <p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
 <h3 id="blockquote-without-attribution">Blockquote without attribution</h3>
@@ -275,39 +275,39 @@ stroke-linejoin="round" class="feather feather-home">
 <h2 id="tables">Tables</h2>
 <p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports them out-of-the-box.</p>
 <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bob</td>
-<td>27</td>
-</tr>
-<tr>
-<td>Alice</td>
-<td>23</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Age</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bob</td>
+          <td>27</td>
+      </tr>
+      <tr>
+          <td>Alice</td>
+          <td>23</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="markdown-within-tables">Markdown within tables</h3>
 <table>
-<thead>
-<tr>
-<th>Italics</th>
-<th>Bold</th>
-<th>Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>italics</em></td>
-<td><strong>bold</strong></td>
-<td><code>code</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Italics</th>
+          <th>Bold</th>
+          <th>Code</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><em>italics</em></td>
+          <td><strong>bold</strong></td>
+          <td><code>code</code></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="code-blocks">Code Blocks</h2>
 <h3 id="code-block-with-backticks">Code block with backticks</h3>

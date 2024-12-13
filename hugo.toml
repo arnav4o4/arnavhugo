@@ -121,11 +121,11 @@ theme = "hugo-blog-awesome"
 
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com/hugo-sid"
+url = "https://github.com/arnav4o4"
 
 [[params.socialIcons]]
 name = "instagram"
-url = "https://twitter.com"
+url = "https://www.instagram.com/a.r.nv"
 
 # [[params.socialIcons]]
 # name = "Rss"
