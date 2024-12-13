@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Arnav Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chroot - A lifesaver for linux users</title>
+      <link>http://localhost:1313/posts/chroot-env/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/chroot-env/</guid>
+      
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Table of content</title>
       <link>http://localhost:1313/posts/table-of-content/</link>

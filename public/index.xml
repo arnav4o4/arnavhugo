@@ -6,7 +6,18 @@
     <description>Recent content in Home on Arnav Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chroot - A lifesaver for linux users</title>
+      <link>http://localhost:1313/posts/chroot-env/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/chroot-env/</guid>
+      
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Table of content</title>
       <link>http://localhost:1313/posts/table-of-content/</link>
@@ -94,8 +105,19 @@
       
       <guid>http://localhost:1313/pages/about/</guid>
       
-      <description>&lt;p&gt;Website is written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
-&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello! I&amp;rsquo;m Arnav Gupta, a passionate and enthusiastic individual with a keen interest in technology and creativity.&lt;/p&gt;
+&lt;p&gt;This website is build using &lt;a href=&#34;https://gohugo.io/&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt; , and  &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-blog-awesome/&#34;&gt;&lt;em&gt;Hugo-blog awesome&lt;/em&gt;&lt;/a&gt; theme.&lt;/p&gt;
+&lt;h4 id=&#34;education&#34;&gt;Education&lt;/h4&gt;
+&lt;p&gt;I completed my schooling from Bishop&amp;rsquo;s Co-Ed School in Pune. Currently, I am a second-year Computer Science student at SRM Institute of Science and Technology, Modinagar.&lt;/p&gt;
+&lt;h4 id=&#34;experience&#34;&gt;Experience&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Basic Java Programming&lt;/strong&gt;: 2 years (2021-2023)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C/C++ Programming&lt;/strong&gt;: 1 year (2023-2024)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linux User&lt;/strong&gt;: Since 2021&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AutoCAD&lt;/strong&gt;: 6 months&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;hobbies-and-interests&#34;&gt;Hobbies and Interests&lt;/h4&gt;
+&lt;p&gt;In my free time, I enjoy expressing my creativity through painting and pencil sketching. I also love staying active by playing sports like football, cricket, and badminton. Additionally, I have a passion for traveling and exploring new places.&lt;/p&gt;</description>
       
     </item>
     
