@@ -6,15 +6,22 @@
     <description>Recent content in Home on Arnav Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 May 2025 01:43:13 +0530</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chroot - A lifesaver for linux users</title>
       <link>http://localhost:1313/posts/chroot-env/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 31 May 2025 01:43:13 +0530</pubDate>
       
       <guid>http://localhost:1313/posts/chroot-env/</guid>
       
-      <description></description>
+      <description>&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.maketecheasier.com/assets/uploads/2022/07/chroot-linux.jpg&#34; alt=&#34;Chroot Linux&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;Chroot environment&lt;/strong&gt; is a way to run programs and commands in modified &lt;strong&gt;root&lt;/strong&gt; directory, the similar way we use &lt;strong&gt;root&lt;/strong&gt; in our terminal.&lt;/p&gt;
+&lt;p&gt;By utilizing &lt;strong&gt;chroot&lt;/strong&gt;, you can separate the execution environment of a program, establishing a controlled area where only designated files and directories can be accessed. This is especially beneficial for &lt;u&gt;system recovery&lt;/u&gt;, security assessments, and setting up isolated environments for particular applications.&lt;/p&gt;
+&lt;h3 id=&#34;different-use-cases-of-chroot&#34;&gt;&lt;u&gt;Different Use Cases of Chroot&lt;/u&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Isolated CI/CD Builds:&lt;/strong&gt; Use chroot in CI/CD pipelines to create isolated build environments, preventing dependency conflicts.&lt;/p&gt;</description>
       
     </item>
     
