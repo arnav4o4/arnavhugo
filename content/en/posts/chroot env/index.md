@@ -33,11 +33,11 @@ environment is called a *<mark>chroot jail</mark>*.**
 
 ![https://linuxtldr.com/wp-content/uploads/2022/12/chroot-jail-1024x675.webp](https://linuxtldr.com/wp-content/uploads/2022/12/chroot-jail-1024x675.webp)
 
-
-
 ---
 
 ## How to use *Chroot* to fix broken system - *System recovery* ?
+
+
 
 If you have faced System failures such as system **not booting**, or you may have unknowingly **removed** some important packages or some dependencies that may have caused issues in your distro.. then Chroot will nothing less than a lifesaver 🛟 for your linux distro. 
 
@@ -50,6 +50,8 @@ Later I noticed that my some system functionalites had stopped working and cant 
 So inorder to fix this, I used chroot. 😮‍💨
 
 - *For more help for how to use chroot reffer [chroot - ArchWiki](https://wiki.archlinux.org/title/Chroot)*
+
+### 
 
 ### Create a live usb of your installed distro
 
@@ -102,7 +104,6 @@ Then you can use the terminal and operate it for the installed distro
 
 ###### <mark>Note</mark> : *You can only install <u>system packages</u> from chroot, you cannot intall user application such as firefox, vscode etc as according to pacman i caused some dependencies issues* 🤷🏻‍♂️.
 
-
 ## Exit Chroot environment
 
 * If you are still inside the chroot environment, make sure to exit it first
@@ -131,7 +132,6 @@ Finally, unmount the root filesystem of the chroot environment:
 umount /path/to/new/root
 ```
 
-
 ## How to update the Pacman mirrorlist from live usb.
 
 1. In order to fix this, I **used EndevourOS reflector** installed in the **live USB**, or simple Arch reflector can also work .
@@ -141,8 +141,6 @@ umount /path/to/new/root
 3. Then I copied the mirrorlists from the `mirrorlist` file , located in `/etc/pacman.d/mirrorlist` directory and pasted in the same directory but in my installed system directory.
 
 4. Then you can use **chroot** to Update the pachages that are installed via pacman. 
-   
-   
 
 #### References :
 
@@ -151,7 +149,5 @@ umount /path/to/new/root
 * [Make Tech Easier](https://www.maketecheasier.com/use-chroot-linux/)
 
 * [DEV Community](https://dev.to/robogeek95/creating-a-chrooted-environment-1gkd)
-
-
 
 ### *Hope this  blog will help* 🫡.
