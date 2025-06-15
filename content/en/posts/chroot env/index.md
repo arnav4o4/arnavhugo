@@ -12,7 +12,7 @@ A **Chroot environment** is a way to run programs and commands in modified **roo
 
 By utilizing **chroot**, you can separate the execution environment of a program, establishing a controlled area where only designated files and directories can be accessed. This is especially beneficial for <u>system recovery</u>, security assessments, and setting up isolated environments for particular applications.
 
-### <u>Different Use Cases of Chroot</u>
+## Different Use Cases of Chroot
 
 1. **Isolated CI/CD Builds:** Use chroot in CI/CD pipelines to create isolated build environments, preventing dependency conflicts.
 
@@ -26,7 +26,7 @@ By utilizing **chroot**, you can separate the execution environment of a program
 
 6. **Secure FTP Server:** Run an FTP server within a chroot to control file access and protect the host file system.
 
-### Note:
+## Note:
 
 **A program that is run in such a modified environment cannot access files and commands outside that environmental directory tree. This modified 
 environment is called a *<mark>chroot jail</mark>*.**
@@ -37,7 +37,7 @@ environment is called a *<mark>chroot jail</mark>*.**
 
 ---
 
-## <u>How to use *Chroot* to fix broken system - *System recovery* ?</u>
+## How to use *Chroot* to fix broken system - *System recovery* ?
 
 If you have faced System failures such as system **not booting**, or you may have unknowingly **removed** some important packages or some dependencies that may have caused issues in your distro.. then Chroot will nothing less than a lifesaver 🛟 for your linux distro. 
 
@@ -51,11 +51,11 @@ So inorder to fix this, I used chroot. 😮‍💨
 
 - *For more help for how to use chroot reffer [chroot - ArchWiki](https://wiki.archlinux.org/title/Chroot)*
 
-### <u>Create a live usb of your installed distro</u>
+### Create a live usb of your installed distro
 
 Creating a live usb is the main part to use chroot because you are going to use ***chroot*** on the terminal of the live usb terminal
 
-### <u>Mounting the partition in which your distro is installed</u>
+### Mounting the partition in which your distro is installed
 
 Mount your installed distro installed partition using the following command -
 
@@ -69,7 +69,7 @@ In the [installation guide](https://wiki.archlinux.org/title/Installation_guide 
 
 Run `lsblk` and note the partition layout of your installation. It will be usually something like `/dev/sdXY` or if you have an NVMe drive `/dev/nvme0nXpY`.
 
-### <u>Enter a chroot</u>
+### Enter a chroot
 
 <u></u>Run *arch-chroot* with the new root directory as first argument - 
 
@@ -77,7 +77,7 @@ Run `lsblk` and note the partition layout of your installation. It will be usual
 arch-chroot */path/to/new/root
 ```
 
-### <u>Using chroot</u>
+### Using chroot
 
 If you run *chroot* directly, below steps are needed before actual *chroot*.
 
@@ -96,15 +96,14 @@ mount --rbind /dev dev/
 chroot /mnt/customroot 
 ```
 
-### <u>Install packages via Pacman</u>
+### Install packages via Pacman
 
 Then you can use the terminal and operate it for the installed distro
 
 ###### <mark>Note</mark> : *You can only install <u>system packages</u> from chroot, you cannot intall user application such as firefox, vscode etc as according to pacman i caused some dependencies issues* 🤷🏻‍♂️.
 
 
-
-### <u>Exit Chroot environment</u>
+## Exit Chroot environment
 
 * If you are still inside the chroot environment, make sure to exit it first
 
@@ -133,8 +132,7 @@ umount /path/to/new/root
 ```
 
 
-
-### <u>How to update the Pacman mirrorlist from live usb.</u>
+## How to update the Pacman mirrorlist from live usb.
 
 1. In order to fix this, I **used EndevourOS reflector** installed in the **live USB**, or simple Arch reflector can also work .
 
