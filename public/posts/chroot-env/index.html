@@ -29,8 +29,8 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2025-05-31T01:43:13&#43;0530 />
-    <meta property="article:published_time" content=2025-05-31T01:43:13&#43;0530 />
+    <meta property="og:article:published_time" content=2025-07-01T01:43:13&#43;0530 />
+    <meta property="article:published_time" content=2025-07-01T01:43:13&#43;0530 />
     <meta property="og:url" content="http://localhost:1313/posts/chroot-env/" />
 
     
@@ -51,11 +51,11 @@
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2025-05-31",
+        "datePublished": "2025-07-01",
         "description": "A lifesaver for linux user",
         "wordCount":  777 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2025-05-31",
+        "dateModified": "2025-07-01",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -68,7 +68,7 @@
     </script>
 
 
-<meta name="generator" content="Hugo 0.147.5">
+<meta name="generator" content="Hugo 0.147.9">
 
     
     <meta property="og:url" content="http://localhost:1313/posts/chroot-env/">
@@ -78,8 +78,8 @@
   <meta property="og:locale" content="en_gb">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-05-31T01:43:13+05:30">
-    <meta property="article:modified_time" content="2025-05-31T01:43:13+05:30">
+    <meta property="article:published_time" content="2025-07-01T01:43:13+05:30">
+    <meta property="article:modified_time" content="2025-07-01T01:43:13+05:30">
 
 
     
@@ -186,7 +186,7 @@ stroke-linejoin="round" class="feather feather-home">
                 
                 
                 <div class="post-meta">
-                    <time datetime="2025-05-31T01:43:13&#43;05:30" itemprop="datePublished"> 31 May 2025 </time>
+                    <time datetime="2025-07-01T01:43:13&#43;05:30" itemprop="datePublished"> 1 Jul 2025 </time>
                 </div>
                 
             </header>
@@ -196,7 +196,7 @@ stroke-linejoin="round" class="feather feather-home">
 <p><img src="https://www.maketecheasier.com/assets/uploads/2022/07/chroot-linux.jpg" alt="Chroot Linux"></p>
 <p>A <strong>Chroot environment</strong> is a way to run programs and commands in modified <strong>root</strong> directory, the similar way we use <strong>root</strong> in our terminal.</p>
 <p>By utilizing <strong>chroot</strong>, you can separate the execution environment of a program, establishing a controlled area where only designated files and directories can be accessed. This is especially beneficial for <u>system recovery</u>, security assessments, and setting up isolated environments for particular applications.</p>
-<h3 id="different-use-cases-of-chroot"><u>Different Use Cases of Chroot</u></h3>
+<h2 id="different-use-cases-of-chroot">Different Use Cases of Chroot</h2>
 <ol>
 <li>
 <p><strong>Isolated CI/CD Builds:</strong> Use chroot in CI/CD pipelines to create isolated build environments, preventing dependency conflicts.</p>
@@ -217,12 +217,12 @@ stroke-linejoin="round" class="feather feather-home">
 <p><strong>Secure FTP Server:</strong> Run an FTP server within a chroot to control file access and protect the host file system.</p>
 </li>
 </ol>
-<h3 id="note">Note:</h3>
+<h2 id="note">Note:</h2>
 <p><strong>A program that is run in such a modified environment cannot access files and commands outside that environmental directory tree. This modified
 environment is called a <em><mark>chroot jail</mark></em>.</strong></p>
 <p><img src="https://linuxtldr.com/wp-content/uploads/2022/12/chroot-jail-1024x675.webp" alt="https://linuxtldr.com/wp-content/uploads/2022/12/chroot-jail-1024x675.webp"></p>
 <hr>
-<h2 id="how-to-use-chroot-to-fix-broken-system---system-recovery-"><u>How to use <em>Chroot</em> to fix broken system - <em>System recovery</em> ?</u></h2>
+<h2 id="how-to-use-chroot-to-fix-broken-system---system-recovery-">How to use <em>Chroot</em> to fix broken system - <em>System recovery</em> ?</h2>
 <p>If you have faced System failures such as system <strong>not booting</strong>, or you may have unknowingly <strong>removed</strong> some important packages or some dependencies that may have caused issues in your distro.. then Chroot will nothing less than a lifesaver 🛟 for your linux distro.</p>
 <p>There are other ways to fix like, going to terminal while booting, where you can use ther terminal like the whole OS is woking on terminal. But that didn&rsquo;t worked for me 🥲</p>
 <p>So I removed some important endevour os system packages, in order to clean my <strong>Arch</strong> 🧹.</p>
@@ -231,18 +231,19 @@ environment is called a <em><mark>chroot jail</mark></em>.</strong></p>
 <ul>
 <li><em>For more help for how to use chroot reffer <a href="https://wiki.archlinux.org/title/Chroot">chroot - ArchWiki</a></em></li>
 </ul>
-<h3 id="create-a-live-usb-of-your-installed-distro"><u>Create a live usb of your installed distro</u></h3>
+<h3></h3>
+<h3 id="create-a-live-usb-of-your-installed-distro">Create a live usb of your installed distro</h3>
 <p>Creating a live usb is the main part to use chroot because you are going to use <em><strong>chroot</strong></em> on the terminal of the live usb terminal</p>
-<h3 id="mounting-the-partition-in-which-your-distro-is-installed"><u>Mounting the partition in which your distro is installed</u></h3>
+<h3 id="mounting-the-partition-in-which-your-distro-is-installed">Mounting the partition in which your distro is installed</h3>
 <p>Mount your installed distro installed partition using the following command -</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mount /dev/sdXY /mnt
 </span></span></code></pre></div><p>The <em>chroot</em> target should be a directory which contains a file system hierarchy.</p>
 <p>In the <a href="https://wiki.archlinux.org/title/Installation_guide" title="Installation guide">installation guide</a>, this directory would be <code>/mnt</code>. For an existing installation, you need to mount existing partitions into <code>/mnt</code> yourself:</p>
 <p>Run <code>lsblk</code> and note the partition layout of your installation. It will be usually something like <code>/dev/sdXY</code> or if you have an NVMe drive <code>/dev/nvme0nXpY</code>.</p>
-<h3 id="enter-a-chroot"><u>Enter a chroot</u></h3>
+<h3 id="enter-a-chroot">Enter a chroot</h3>
 <p><u></u>Run <em>arch-chroot</em> with the new root directory as first argument -</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">arch-chroot */path/to/new/root
-</span></span></code></pre></div><h3 id="using-chroot"><u>Using chroot</u></h3>
+</span></span></code></pre></div><h3 id="using-chroot">Using chroot</h3>
 <p>If you run <em>chroot</em> directly, below steps are needed before actual <em>chroot</em>.</p>
 <p>First, mount the temporary API filesystems -</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> */path/to/new/root*
@@ -251,10 +252,10 @@ environment is called a <em><mark>chroot jail</mark></em>.</strong></p>
 </span></span><span class="line"><span class="cl">mount --rbind /dev dev/
 </span></span></code></pre></div><h5 id="the-enter-the-chroot-env">The enter the chroot env:</h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chroot /mnt/customroot 
-</span></span></code></pre></div><h3 id="install-packages-via-pacman"><u>Install packages via Pacman</u></h3>
+</span></span></code></pre></div><h3 id="install-packages-via-pacman">Install packages via Pacman</h3>
 <p>Then you can use the terminal and operate it for the installed distro</p>
 <h6 id="note--you-can-only-install--"><mark>Note</mark> : <em>You can only install <u>system packages</u> from chroot, you cannot intall user application such as firefox, vscode etc as according to pacman i caused some dependencies issues</em> 🤷🏻‍♂️.</h6>
-<h3 id="exit-chroot-environment"><u>Exit Chroot environment</u></h3>
+<h2 id="exit-chroot-environment">Exit Chroot environment</h2>
 <ul>
 <li>If you are still inside the chroot environment, make sure to exit it first</li>
 </ul>
@@ -272,7 +273,7 @@ environment is called a <em><mark>chroot jail</mark></em>.</strong></p>
 </ul>
 <p>Finally, unmount the root filesystem of the chroot environment:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">umount /path/to/new/root
-</span></span></code></pre></div><h3 id="how-to-update-the-pacman-mirrorlist-from-live-usb"><u>How to update the Pacman mirrorlist from live usb.</u></h3>
+</span></span></code></pre></div><h2 id="how-to-update-the-pacman-mirrorlist-from-live-usb">How to update the Pacman mirrorlist from live usb.</h2>
 <ol>
 <li>
 <p>In order to fix this, I <strong>used EndevourOS reflector</strong> installed in the <strong>live USB</strong>, or simple Arch reflector can also work .</p>

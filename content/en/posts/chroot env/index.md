@@ -1,6 +1,6 @@
 ---
 title: Chroot - A lifesaver for linux users
-date: 2025-05-31T01:43:13+05:30
+date: 2025-07-01T01:43:13+05:30
 author: Arnav Gupta
 description: A lifesaver for linux user
 ---
@@ -36,8 +36,6 @@ environment is called a *<mark>chroot jail</mark>*.**
 ---
 
 ## How to use *Chroot* to fix broken system - *System recovery* ?
-
-
 
 If you have faced System failures such as system **not booting**, or you may have unknowingly **removed** some important packages or some dependencies that may have caused issues in your distro.. then Chroot will nothing less than a lifesaver 🛟 for your linux distro. 
 
