@@ -6,7 +6,18 @@
     <description>Recent content in Home on Arnav Gupta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 01 Jul 2025 01:43:13 +0530</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Jul 2025 01:43:13 +0530</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to setup neovim for Java programming ?</title>
+      <link>http://localhost:1313/posts/nvim-java/</link>
+      <pubDate>Fri, 04 Jul 2025 01:43:13 +0530</pubDate>
+      
+      <guid>http://localhost:1313/posts/nvim-java/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/9FXBZGpm/image.png&#34; alt=&#34;neovim&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Chroot - A lifesaver for linux users</title>
       <link>http://localhost:1313/posts/chroot-env/</link>
