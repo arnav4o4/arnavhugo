@@ -49,7 +49,6 @@ So inorder to fix this, I used chroot. 😮‍💨
 
 - *For more help for how to use chroot reffer [chroot - ArchWiki](https://wiki.archlinux.org/title/Chroot)*
 
-### 
 
 ### Create a live usb of your installed distro
 
